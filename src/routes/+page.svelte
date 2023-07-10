@@ -34,8 +34,8 @@
 					<p>
 						Desenvolvedor Full-stack com especialidade de 2 anos em aplicações no lado do <span
 							class="text-secondary">Front-end</span
-						>, formado como tecnico em Desenvolvimento Web. Atuando hoje como desenvolvedor Full-stack na
-						Black Beans, e tambem atuando em projetos independentes como freelancer.
+						>. Atuando hoje como desenvolvedor na Black Beans, e tambem em projetos independentes como
+						freelancer.
 					</p>
 
 					<p>
@@ -87,7 +87,7 @@
 						</li>
 						<li class="d-flex">
 							<strong class="mr-5">2022 - o momento</strong>
-							<p class="mb-1 ps-3">Lider operacional na Black Beans</p>
+							<p class="mb-1 ps-2">Desenvolvedor Full-stack na Black Beans</p>
 						</li>
 					</ul>
 				</section>
@@ -114,7 +114,7 @@
 						<span />
 					</h2>
 					<p>
-						<span class="text-secondary">Acampar</span>, Trilhas, Boxe, Jogos, Fotografia,
+						<span class="text-secondary">Acampar</span>, Trilhas,
 						<span class="text-secondary">Corrida</span>, Meditação e Yoga
 					</p>
 				</section>
