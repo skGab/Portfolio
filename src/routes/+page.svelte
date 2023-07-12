@@ -41,7 +41,7 @@
 					<p>
 						Com experiência na construção e manutenção de aplicações do lado do Front-end e Back-end, desde
 						a concepção do produto, análise de layout e prototipagem ate seu desenvolvimento e produção,
-						pensando tambem em <span class="text-secondary">SEO e arquitetura dos dados</span>, com o
+						pensando tambem em <span class="text-secondary">SEO e arquitetura de dados</span>, com o
 						objetivo de criar sistemas escaláveis e acessíveis.
 					</p>
 
