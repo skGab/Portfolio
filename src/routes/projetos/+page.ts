@@ -1,20 +1,63 @@
 import type { PageLoad } from './$types';
+import apiImage from '$lib/api_thumb.webp';
+import icarrosImage from '$lib/imgs/icarros_thumb.webp';
+import abcBooksImage from '$lib/imgs/abcBooks_thumb.webp';
+import bnsImage from '$lib/imgs/bns_thumb.webp';
+import mobiltecImage from '$lib/imgs/mobiltec_thumb.webp';
+import coopersImage from '$lib/imgs/coopers_thumb.webp';
+import blogNovalarImage from '$lib/imgs/blogNovalar_thumb.webp';
 
-interface Repos {
+export interface Repos {
 	name: string;
+	categorie: string;
+	image: HTMLImageElement;
 }
 
 interface Error {
 	message: string;
 }
 
+interface repoCategories {
+	[key: string]: string;
+}
+
+const repositoryImages = {
+	'Leads-API': apiImage,
+	API: apiImage,
+	'Icarros-Sveltekit': icarrosImage,
+	abcbooks: abcBooksImage,
+	'BNS-HTML': bnsImage,
+	Mobiltec: mobiltecImage,
+	Coopers: coopersImage,
+	TestBlogNovalar: blogNovalarImage,
+};
+
+const repositoryCategories: repoCategories = {
+	'Leads-API': 'back-end',
+	API: 'back-end',
+	'Icarros-Sveltekit': 'front-end',
+	abcbooks: 'front-end',
+	'BNS-HTML': 'front-end',
+	Mobiltec: 'front-end',
+	Coopers: 'full-stack',
+	TestBlogNovalar: 'front-end',
+};
+
 export const load = (async ({ fetch }) => {
 	const username = 'zdeep10';
 
 	try {
-		const res = await fetch(`https://api.github.com/users/${username}/starred`);
-		const repos = await res.json();
-		const repositories = repos.map((repositorie: Repos) => repositorie.name);
+		const data = await fetch(`https://api.github.com/users/${username}/starred`);
+		const parseData = await data.json();
+
+		const repositories = parseData.map((repo: Repos) => {
+			const repoName = repo.name as keyof typeof repositoryImages;
+			return {
+				name: repo.name,
+				categorie: repositoryCategories[repoName],
+				image: repositoryImages[repoName],
+			};
+		});
 
 		return { repositories };
 	} catch (error) {

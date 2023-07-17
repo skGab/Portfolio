@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Repos from '$lib/components/Repos.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -15,7 +16,7 @@
 		<h2 class="d-flex flex-column mb-3" data-aos="fade-up" data-aos-duration="1000">Web App <span /></h2>
 		<ul class="row justify-content-between mb-0" data-aos="fade-up" data-aos-duration="1200">
 			<!-- {renderRepositories('web-app')} -->
-			{data.repositories}
+			<Repos {data} />
 		</ul>
 
 		<hr class="mt-5 mb-4" />
