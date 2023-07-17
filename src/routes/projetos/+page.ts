@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
-import apiImage from '$lib/api_thumb.webp';
+import apiImage from '$lib/imgs/api_thumb.webp';
 import icarrosImage from '$lib/imgs/icarros_thumb.webp';
 import abcBooksImage from '$lib/imgs/abcBooks_thumb.webp';
 import bnsImage from '$lib/imgs/bns_thumb.webp';
@@ -11,6 +11,7 @@ export interface Repos {
 	name: string;
 	categorie: string;
 	image: HTMLImageElement;
+	html_url: HTMLLinkElement;
 }
 
 interface Error {
@@ -50,12 +51,15 @@ export const load = (async ({ fetch }) => {
 		const data = await fetch(`https://api.github.com/users/${username}/starred`);
 		const parseData = await data.json();
 
+		// console.log(parseData)
+
 		const repositories = parseData.map((repo: Repos) => {
 			const repoName = repo.name as keyof typeof repositoryImages;
 			return {
 				name: repo.name,
 				categorie: repositoryCategories[repoName],
 				image: repositoryImages[repoName],
+				link: repo.html_url,
 			};
 		});
 
