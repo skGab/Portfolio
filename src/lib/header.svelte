@@ -6,12 +6,13 @@
 </script>
 
 <header id="header" class="sticky-top">
-	<nav class="navbar navbar-expand-lg navbar-light">
+	<nav class="navbar navbar-expand-lg navbar-dark">
 		<div class="container">
 			<a class="navbar-brand fw-bold" href="/">
 				<img src={treeIcon} width={25} class="img-fluid me-1 hoverTree" alt="Icone floresta" />
 				gabriel assunção
 			</a>
+
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -23,11 +24,12 @@
 			>
 				<span class="navbar-toggler-icon" />
 			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-				<ul class="navbar-nav mb-2 mb-lg-0 gap-1">
+
+			<div class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0" id="navbarSupportedContent">
+				<ul class="navbar-nav mb-2 mb-lg-0 gap-1 align-items-end">
 					<li class="nav-item">
 						<a
-							class={$page.url.pathname === '/projetos' ? 'nav-link active' : 'nav-link'}
+							class={$page.url.pathname === '/projetos' ? 'nav-link active px-2' : 'nav-link px-2'}
 							aria-current="page"
 							href="/projetos">Projetos</a
 						>
@@ -72,7 +74,12 @@
 				transform: rotate(-22deg);
 			}
 
+			.nav-link {
+				width: fit-content;
+			}
+
 			.nav-link.active {
+				transition: all 0.3s ease-in;
 				background-color: #ffae35;
 				color: var(--body) !important;
 			}

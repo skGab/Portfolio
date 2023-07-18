@@ -9,7 +9,7 @@
 <section id="about" class="pb-4">
 	<div class="container px-4">
 		<div class="row">
-			<div class="col-8 mx-auto">
+			<div class="col-12 col-md-8 mx-auto">
 				<!-- {/* NAME */} -->
 				<section
 					id="profile"

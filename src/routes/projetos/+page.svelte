@@ -13,15 +13,15 @@
 <section id="projects" class="py-5">
 	<div class="container custom_container">
 		<!-- {/* WEB APP */} -->
-		<h2 class="d-flex flex-column mb-3" data-aos="fade-up" data-aos-duration="1000">Full-Stack <span /></h2>
+		<h2 class="d-flex flex-column mb-4" data-aos="fade-up" data-aos-duration="1000">Full-Stack <span /></h2>
 		<ul class="row justify-content-between mb-0" data-aos="fade-up" data-aos-duration="1200">
 			<Repos {data} cat={'full-stack'} />
 		</ul>
 
-		<hr class="mt-5 mb-4" />
+		<hr class="mt-4 mb-4" />
 
 		<!-- {/* FRONT-END */} -->
-		<h2 class="d-flex flex-column mb-3" data-aos="fade-up" data-aos-duration="1200">Front-end <span /></h2>
+		<h2 class="d-flex flex-column mb-4" data-aos="fade-up" data-aos-duration="1200">Front-end <span /></h2>
 		<ul
 			class="row justify-content-between mb-0"
 			data-aos="fade-up"
@@ -30,11 +30,11 @@
 		>
 			<Repos {data} cat={'front-end'} />
 		</ul>
-		<hr class="mt-5 mb-4" />
+		<hr class="mt-4 mb-4" />
 
 		<!-- {/* BACK-END */} -->
 		<h2
-			class="d-flex flex-column mb-3"
+			class="d-flex flex-column mb-4"
 			data-aos="fade-up"
 			data-aos-duration="1000"
 			data-aos-anchor-placement="top-bottom"
