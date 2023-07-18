@@ -13,7 +13,7 @@
 				<!-- {/* NAME */} -->
 				<section
 					id="profile"
-					class="d-flex align-items-center justify-content-between mb-5"
+					class="d-flex align-items-center justify-content-between my-5"
 					data-aos="fade-up"
 					data-aos-duration="1200"
 				>
@@ -76,18 +76,22 @@
 					<ul>
 						<li class="d-flex">
 							<strong>1999</strong>
-							<p class="mb-1 ps-3">Nascido em Três Corações, Minas Gerais.</p>
+							<p class="mb-1 ps-3">Nascido em Três Corações, Minas Gerais;</p>
 						</li>
 						<li class="d-flex">
 							<strong class="mr-5">2021</strong>
 							<p class="mb-1 ps-3">
 								Formação Tecnica em Desenvolvimento Web Full-Stack no SENAI - Centro de Treinamento da
-								Tecnologia da Informação
+								Tecnologia da Informação;
 							</p>
 						</li>
 						<li class="d-flex">
-							<strong class="mr-5">2022 - o momento</strong>
-							<p class="mb-1 ps-2">Desenvolvedor Full-stack na Black Beans</p>
+							<strong class="mr-5">2022</strong>
+							<p class="mb-1 ps-3">Inicio de jornada como Desenvolvedor Front-end junior na Black Beans;</p>
+						</li>
+						<li class="d-flex">
+							<strong class="mr-5">2023</strong>
+							<p class="mb-1 ps-3">Promovido para Desenvolvedor Full-stack junior na Black Beans.</p>
 						</li>
 					</ul>
 				</section>

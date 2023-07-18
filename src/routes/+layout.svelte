@@ -19,6 +19,16 @@
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"
 	></script>
+
+	<!-- AOS ANIMATION -->
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+	<script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+		AOS.init();
+	</script>
 </svelte:head>
 
 <!-- HEADER -->

@@ -9,7 +9,7 @@ import blogNovalarImage from '$lib/imgs/blogNovalar_thumb.webp';
 
 export interface Repos {
 	name: string;
-	categorie: string;
+	category: string;
 	image: HTMLImageElement;
 	html_url: HTMLLinkElement;
 }
@@ -57,7 +57,7 @@ export const load = (async ({ fetch }) => {
 			const repoName = repo.name as keyof typeof repositoryImages;
 			return {
 				name: repo.name,
-				categorie: repositoryCategories[repoName],
+				category: repositoryCategories[repoName],
 				image: repositoryImages[repoName],
 				link: repo.html_url,
 			};

@@ -51,3 +51,31 @@
 		</div>
 	</nav>
 </header>
+
+<style lang="scss">
+	header {
+		nav {
+			background-color: #20202380;
+			backdrop-filter: blur(10px);
+
+			a {
+				text-decoration: none;
+				color: var(--white) !important;
+			}
+
+			.navbar-brand:hover {
+				text-decoration: none;
+			}
+
+			.navbar-brand:hover > .hoverTree {
+				transition: all 0.3s;
+				transform: rotate(-22deg);
+			}
+
+			.nav-link.active {
+				background-color: #ffae35;
+				color: var(--body) !important;
+			}
+		}
+	}
+</style>
