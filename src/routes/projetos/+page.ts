@@ -6,6 +6,7 @@ import bnsImage from '$lib/imgs/bns_thumb.webp';
 import mobiltecImage from '$lib/imgs/mobiltec_thumb.webp';
 import coopersImage from '$lib/imgs/coopers_thumb.webp';
 import blogNovalarImage from '$lib/imgs/blogNovalar_thumb.webp';
+import { error } from '@sveltejs/kit';
 
 export interface Repos {
 	name: string;
@@ -47,30 +48,24 @@ const repositoryCategories: repoCategories = {
 export const load = (async ({ fetch }) => {
 	const username = 'zdeep10';
 
-	try {
-		const data = await fetch(`https://api.github.com/users/${username}/starred`);
-		const parseData = await data.json();
+	const data = await fetch(`https://api.github.com/users/${username}/starred`);
+	const parseData = await data.json();
 
-		// console.log(parseData)
-
-		const repositories = parseData.map((repo: Repos) => {
-			const repoName = repo.name as keyof typeof repositoryImages;
-			return {
-				name: repo.name,
-				category: repositoryCategories[repoName],
-				image: repositoryImages[repoName],
-				link: repo.html_url,
-			};
-		});
-
-		return { repositories };
-	} catch (error) {
-		const err = error as Error;
-
+	const repositories = parseData.map((repo: Repos) => {
+		const repoName = repo.name as keyof typeof repositoryImages;
 		return {
-			error: true,
-			message: 'An error occurred while fetching repositories.',
-			details: err.message,
+			name: repo.name,
+			category: repositoryCategories[repoName],
+			image: repositoryImages[repoName],
+			link: repo.html_url,
 		};
+	});
+
+	if (!repositories) {
+		throw error(404, {
+			message: 'teste',
+		});
 	}
+
+	return { repositories };
 }) satisfies PageLoad;

@@ -12,8 +12,9 @@ Portfolio being developed with Sveltekit, see:#
 [ x ] projects from github
 [ x ] Header animation
 [ x ] Switch page animation ('AOS')
-[ x ] fix straming loading
+[   ] fix straming loading
 [ x ] Bio Content
 [ x ] Projects thumbs
+[   ] Build responsiviness
 ```
 

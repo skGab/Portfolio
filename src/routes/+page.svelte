@@ -119,7 +119,7 @@
 					</h2>
 					<p>
 						<span class="text-secondary">Acampar</span>, Trilhas,
-						<span class="text-secondary">Corrida</span>, Meditação e Yoga
+						<span class="text-secondary">Corrida</span>, Meditação, Yoga.
 					</p>
 				</section>
 
