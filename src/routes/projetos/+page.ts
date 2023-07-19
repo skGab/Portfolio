@@ -15,10 +15,6 @@ export interface Repos {
 	html_url: HTMLLinkElement;
 }
 
-interface Error {
-	message: string;
-}
-
 interface repoCategories {
 	[key: string]: string;
 }
