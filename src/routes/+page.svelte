@@ -2,8 +2,11 @@
 </script>
 
 <svelte:head>
-	<title>Gabriel A - Home</title>
-	<meta name="description" content="This is where the description goes for SEO" />
+	<title>Inicio - Gabriel Assunção</title>
+	<meta
+		name="description"
+		content="Gabriel Assunção - Desenvolvedor Full-Stack especializado em Next.js, Laravel e Wordpress. Conheça meu portfólio e entre em contato para projetos"
+	/>
 </svelte:head>
 
 <section id="about" class="pb-4">
@@ -46,7 +49,7 @@
 					</p>
 
 					<div class="w-100 text-center">
-						<a href="/projetos" title="Meu portfólio" class="btn btn-light fw-bold align-items-center"
+						<a href="/projetos" title="Meu portfólio" class="btn fw-bold align-items-center"
 							>Meu portfólio
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +90,9 @@
 						</li>
 						<li class="d-flex">
 							<strong class="mr-5">2022</strong>
-							<p class="mb-1 ps-3">Inicio de jornada como Desenvolvedor Front-end junior na Black Beans;</p>
+							<p class="mb-1 ps-3">
+								Inicio de jornada como Desenvolvedor Front-end junior na Black Beans;
+							</p>
 						</li>
 						<li class="d-flex">
 							<strong class="mr-5">2023</strong>
@@ -206,6 +211,10 @@
 			p {
 				text-indent: 1rem;
 				text-align: justify;
+			}
+
+			.btn {
+				background-color: #dddddd;
 			}
 		}
 

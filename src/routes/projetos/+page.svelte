@@ -6,14 +6,17 @@
 </script>
 
 <svelte:head>
-	<title>Gabriel A - Home</title>
-	<meta name="description" content="This is where the description goes for SEO" />
+	<title>Projetos - Gabriel Assunção</title>
+	<meta
+		name="description"
+		content="Explore uma gama variada de projetos de desenvolvimento web de Gabriel Assunção, abrangendo Full-Stack, Front-end e Back-end. Confira exemplos de trabalhos recentes, saiba mais sobre minhas habilidades e competências e veja como posso ajudá-lo a atingir seus objetivos digitais."
+	/>
 </svelte:head>
 
 <section id="projects" class="py-5">
 	<div class="container custom_container">
 		<!-- {/* WEB APP */} -->
-		<h2 class="d-flex flex-column mb-4" data-aos="fade-up" data-aos-duration="1000">Full-Stack <span /></h2>
+		<h2 class="d-flex flex-column mb-4" data-aos="fade-up" data-aos-duration="1000">Web-App <span /></h2>
 		<ul class="row justify-content-between mb-0" data-aos="fade-up" data-aos-duration="1200">
 			<Repos {data} cat={'full-stack'} />
 		</ul>
@@ -41,7 +44,6 @@
 		>
 			Back-end <span />
 		</h2>
-
 		<ul
 			class="row justify-content-between mb-0"
 			data-aos="fade-up"
