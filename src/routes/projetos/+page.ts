@@ -1,7 +1,12 @@
 import type { PageLoad } from './$types';
+import type { Config } from '@sveltejs/adapter-vercel';
 import { error } from '@sveltejs/kit';
 import { repoCategories, repoImgs, repoDescription } from './content';
 import type { Repos } from './interface';
+
+export const config: Config = {
+	runtime: 'edge',
+};
 
 export const load = (async ({ fetch }) => {
 	const username = 'zdeep10';
