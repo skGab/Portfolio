@@ -16,8 +16,8 @@ Portfolio being developed with Sveltekit, see:#
 [ x ] Bio Content
 [ x ] Projects thumbs
 [ x ] Build responsiviness
-[   ] Projects description
-[   ] Projects selection
+[ x ] Projects description
+[ x ] Projects selection
         - Mobiltec (PHP)
         - Icarros (sveltekit)
         - BNS (HTML + CSS)
@@ -30,4 +30,5 @@ Portfolio being developed with Sveltekit, see:#
 [   ] Projects links
 [   ] SEO revision
 [   ] Optimization revision
+[   ] Deploy
 ```
