@@ -17,7 +17,7 @@
 	<div class="container custom_container">
 		<!-- {/* WEB APP */} -->
 		<h2 class="d-flex flex-column mb-4" data-aos="fade-up" data-aos-duration="1000">Web-App <span /></h2>
-		<ul class="row justify-content-between mb-0" data-aos="fade-up" data-aos-duration="1200">
+		<ul class="row justify-content-between align-items-start mb-0" data-aos="fade-up" data-aos-duration="1200">
 			<Repos {data} cat={'full-stack'} />
 		</ul>
 
@@ -26,13 +26,14 @@
 		<!-- {/* FRONT-END */} -->
 		<h2 class="d-flex flex-column mb-4" data-aos="fade-up" data-aos-duration="1200">Front-end <span /></h2>
 		<ul
-			class="row justify-content-between mb-0"
+			class="row justify-content-between align-items-start mb-0"
 			data-aos="fade-up"
 			data-aos-duration="1400"
 			data-aos-anchor-placement="top-bottom"
 		>
 			<Repos {data} cat={'front-end'} />
 		</ul>
+
 		<hr class="mt-4 mb-4" />
 
 		<!-- {/* BACK-END */} -->
@@ -45,7 +46,7 @@
 			Back-end <span />
 		</h2>
 		<ul
-			class="row justify-content-between mb-0"
+			class="row justify-content-between align-items-start mb-0"
 			data-aos="fade-up"
 			data-aos-duration="1000"
 			data-aos-anchor-placement="top-bottom"

@@ -18,6 +18,14 @@ Portfolio being developed with Sveltekit, see:#
 [ x ] Build responsiviness
 [   ] Projects description
 [   ] Projects selection
+        - Mobiltec (PHP)
+        - Icarros (sveltekit)
+        - BNS (HTML + CSS)
+        - AtlanticHub (Wordpress)
+        - Leads-api (RestApi + Ts)
+        - Api (RestApi + Ts)
+        - Portfolio (sveltekit)
+        - Coopers (React + Sass)
 [   ] Projects documentation and organization
 [   ] Projects links
 [   ] SEO revision

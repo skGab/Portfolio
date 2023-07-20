@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Repos } from '../../routes/projetos/+page';
+	import type { Repos } from '../../routes/projetos/interface';
 
 	export let data;
 	export let cat: string;
@@ -9,11 +9,11 @@
 
 {#each filteredRepos as repo}
 	<li class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
-		<a href={repo.link} target="_blank" rel="noreferrer">
+		<a href={repo.link} class="w-100" target="_blank" rel="noreferrer">
 			<figure class="project text-center">
 				<img loading="lazy" src={repo.image} alt="project thumb" class="w-100 mb-3" />
 				<h3 class="h5 mb-1">{repo.name}</h3>
-				<p class="mb-0">descricao descricao descricao descricao descriao</p>
+				<p class="mb-0">{repo.description}</p>
 			</figure>
 		</a>
 	</li>
@@ -21,9 +21,13 @@
 
 <style lang="scss">
 	a {
-		text-decoration: none;
 		color: unset;
 	}
+
+	a:hover {
+		color: #fd8802de;
+	}
+
 	.project {
 		margin: 0;
 		text-align: center;
@@ -37,7 +41,7 @@
 			object-fit: cover;
 			min-height: 130px;
 			max-height: 130px;
-			max-width: 230px;
+			// max-width: 230px;
 		}
 		img:hover {
 			-webkit-mask-position: 7.5% 50%, 92.5% 50%;
@@ -46,6 +50,7 @@
 		}
 
 		p {
+			font-size: 0.95rem;
 			max-width: 250px;
 		}
 	}

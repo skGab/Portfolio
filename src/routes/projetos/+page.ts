@@ -1,45 +1,7 @@
 import type { PageLoad } from './$types';
-import apiImage from '$lib/imgs/api_thumb.webp';
-import icarrosImage from '$lib/imgs/icarros_thumb.webp';
-import abcBooksImage from '$lib/imgs/abcBooks_thumb.webp';
-import bnsImage from '$lib/imgs/bns_thumb.webp';
-import mobiltecImage from '$lib/imgs/mobiltec_thumb.webp';
-import coopersImage from '$lib/imgs/coopers_thumb.webp';
-import blogNovalarImage from '$lib/imgs/blogNovalar_thumb.webp';
 import { error } from '@sveltejs/kit';
-
-export interface Repos {
-	name: string;
-	category: string;
-	image: HTMLImageElement;
-	html_url: HTMLLinkElement;
-}
-
-interface repoCategories {
-	[key: string]: string;
-}
-
-const repositoryImages = {
-	'Leads-API': apiImage,
-	API: apiImage,
-	'Icarros-Sveltekit': icarrosImage,
-	abcbooks: abcBooksImage,
-	'BNS-HTML': bnsImage,
-	Mobiltec: mobiltecImage,
-	Coopers: coopersImage,
-	TestBlogNovalar: blogNovalarImage,
-};
-
-const repositoryCategories: repoCategories = {
-	'Leads-API': 'back-end',
-	API: 'back-end',
-	'Icarros-Sveltekit': 'front-end',
-	abcbooks: 'front-end',
-	'BNS-HTML': 'front-end',
-	Mobiltec: 'front-end',
-	Coopers: 'full-stack',
-	TestBlogNovalar: 'front-end',
-};
+import { repoCategories, repoImgs, repoDescription } from './content';
+import type { Repos } from './interface';
 
 export const load = (async ({ fetch }) => {
 	const username = 'zdeep10';
@@ -47,13 +9,13 @@ export const load = (async ({ fetch }) => {
 	const data = await fetch(`https://api.github.com/users/${username}/starred`);
 	const parseData = await data.json();
 
-	const repositories = parseData.map((repo: Repos) => {
-		const repoName = repo.name as keyof typeof repositoryImages;
+	const repositories: Repos[] = parseData.map((repo: Repos) => {
 		return {
 			name: repo.name,
-			category: repositoryCategories[repoName],
-			image: repositoryImages[repoName],
+			category: repoCategories[repo.name],
+			image: repoImgs[repo.name],
 			link: repo.html_url,
+			description: repoDescription[repo.name],
 		};
 	});
 
