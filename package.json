@@ -17,7 +17,7 @@
 		"@sveltejs/kit": "^1.20.4",
 		"@types/aos": "^3.0.4",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
-		"@typescript-eslint/parser": "^6.0.0",
+		"@typescript-eslint/parser": "5.0.0",
 		"eslint": "^8.28.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-airbnb-typescript": "^17.0.0",
@@ -41,6 +41,7 @@
 	"type": "module",
 	"dependencies": {
 		"aos": "^2.3.4",
+		"eslint-plugin-react-hooks": "^4.3.0",
 		"sass": "^1.63.6",
 		"vite": "^4.3.9"
 	}
