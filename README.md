@@ -38,6 +38,7 @@ Portfolio being developed with Sveltekit, see:#
 [   ] Change projects names on github
 [   ] Projects View
 [   ] SEO revision
+[   ] Open Graph
 [   ] Optimization revision
-[   ] Deploy
+[ x ] Deploy
 ```
