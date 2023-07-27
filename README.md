@@ -4,7 +4,7 @@
 <!-- THUMB -->
 <p align="center">
   <a href="https://portfolio-one-mu-37.vercel.app/" rel="noopener" target="_blank">
-    <img width=200px height=200px src="./src/lib/imgs/doc_thumb.png" alt="Logo do Projeto">
+    <img width=200px height=200px src="./src/lib/imgs/portfolio_thumb.webp" alt="Logo do Projeto">
   </a>
 </p>
 
