@@ -10,36 +10,36 @@ import atlanticImage from '$lib/imgs/atlantic_thumb.webp';
 
 // IMAGES
 const repoImgs: RepoImages = {
-	'Atlantic-Hub': atlanticImage,
-	'Portfolio-Svelte': portfolioImage,
+	Atlantic: atlanticImage,
+	Portfolio: portfolioImage,
 	'Leads-API': apiImage,
 	API: apiImage,
-	'Icarros-Sveltekit': icarrosImage,
-	'BNS-HTML': bnsImage,
+	Icarros: icarrosImage,
+	BNS: bnsImage,
 	Mobiltec: mobiltecImage,
 	Coopers: coopersImage,
 };
 
 // CATEGORIES
 const repoCategories: RepoCategories = {
-	'Atlantic-Hub': 'front-end',
-	'Portfolio-Svelte': 'full-stack',
+	Atlantic: 'front-end',
+	Portfolio: 'full-stack',
 	'Leads-API': 'back-end',
 	API: 'back-end',
-	'Icarros-Sveltekit': 'front-end',
-	'BNS-HTML': 'front-end',
+	Icarros: 'front-end',
+	BNS: 'front-end',
 	Mobiltec: 'front-end',
 	Coopers: 'full-stack',
 };
 
 // DESCRIPTION
 const repoDescription: RepoDescriptions = {
-	'Atlantic-Hub': 'Template conceito Atlantic Hub - Wordpress',
-	'Portfolio-Svelte': 'Meu Portfolio - Sveltekit & Typescript',
+	Atlantic: 'Template conceito Atlantic Hub - Wordpress',
+	Portfolio: 'Meu Portfolio - Sveltekit & Typescript',
 	'Leads-API': 'Recebendo dados + armazenamento em tabelas do Google BigQuery',
-	API: 'Recebendo requests de aplicações. Ex: Coopers',
-	'Icarros-Sveltekit': 'Template conceito Icarros - Sveltekit',
-	'BNS-HTML': 'Template conceito BNS - Html & Css',
+	API: 'Recebendo requests de aplicações ex. Coopers',
+	Icarros: 'Template conceito Icarros - Sveltekit',
+	BNS: 'Template conceito BNS - Html & Css',
 	Mobiltec: 'Template conceito Mobiltec - PHP',
 	Coopers: 'To Do App - React & Sass',
 };

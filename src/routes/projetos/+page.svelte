@@ -24,7 +24,7 @@
 		<hr class="mt-4 mb-4" />
 
 		<!-- {/* FRONT-END */} -->
-		<h2 class="d-flex flex-column mb-4" data-aos="fade-up" data-aos-duration="1200">Front-end <span /></h2>
+		<h2 class="d-flex flex-column mb-4" data-aos="fade-up" data-aos-duration="1200">Front-End <span /></h2>
 		<ul
 			class="row justify-content-between align-items-start mb-0"
 			data-aos="fade-up"
@@ -43,7 +43,7 @@
 			data-aos-duration="1000"
 			data-aos-anchor-placement="top-bottom"
 		>
-			Back-end <span />
+			Back-End <span />
 		</h2>
 		<ul
 			class="row justify-content-between align-items-start mb-0"
