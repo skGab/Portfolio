@@ -39,60 +39,58 @@
 14. [Autores](#authors)
 15. [Agradecimentos](#acknowledgement)
 
-## 1. 🧐 Introdução & O que o sistema deve fazer (objetivos) <a name="introduction"></a>
+## 1. Introdução & O que o sistema deve fazer <a name="introduction"></a>
 
 Escreva 1-2 parágrafos descrevendo o propósito e os objetivos do seu projeto.
 
-## 2. ⛓️ Restrições (constraints) <a name="constraints"></a>
+## 2. Restrições <a name="constraints"></a>
 
 Explique quaisquer restrições ou limitações que possam afetar o desenvolvimento do projeto.
 
-## 3. 🌐 Contexto & Escopo (escopo) <a name="scope"></a>
+## 3. Contexto & Escopo <a name="scope"></a>
 
 Defina o contexto e o escopo do seu projeto. O que está incluído e o que não está?
 
-## 4. 🗺️ Solução estratégica (estratégia) <a name="strategy"></a>
+## 4. Solução estratégica <a name="strategy"></a>
 
 Descreva a estratégia e abordagem de alto nível para resolver o problema.
 
-## 5. 🧱 Visualização de construção de blocos (visão de blocos de construção) <a name="building-block-view"></a>
+## 5. Visualização de construção de blocos <a name="building-block-view"></a>
 
 Forneça uma visualização ou explicação dos blocos de construção e componentes utilizados no sistema.
 
-## 6. 🏃 Visualização em execução (visão em tempo de execução) <a name="runtime-view"></a>
+## 6. Visualização em execução <a name="runtime-view"></a>
 
 Descreva a visão em tempo de execução do seu sistema, mostrando como os componentes interagem durante a execução.
 
-## 7. 🚀 Hospedagem (implantação) <a name="deployment"></a>
+## 7. Hospedagem <a name="deployment"></a>
 
 Explique o processo de implantação e quaisquer observações adicionais para hospedar o sistema.
 
-## 8. 📚 Conceitos técnicos (conceitos transversais) <a name="crosscutting-concepts"></a>
+## 8. Conceitos técnicos <a name="crosscutting-concepts"></a>
 
 Destaque quaisquer conceitos técnicos ou princípios que sejam cruciais para entender o projeto.
 
-## 9. 🏛️ Arquitetura (arquitetura) <a name="architecture"></a>
+## 9. Arquitetura <a name="architecture"></a>
 
 Forneça uma visão geral da arquitetura do sistema e seus componentes.
 
-## 10. 🔍 Requerimentos de qualidade (requisitos de qualidade) <a name="quality-requirements"></a>
+## 10. Requerimentos de qualidade <a name="quality-requirements"></a>
 
 Liste os requisitos e critérios de qualidade que o sistema deve atender.
 
-## 11. ⚠️ Riscos e falhas conhecidas (riscos e débito técnico) <a name="risks-and-technical-debt"></a>
+## 11. Riscos e falhas conhecidas <a name="risks-and-technical-debt"></a>
 
 Identifique quaisquer riscos conhecidos ou débito técnico que possam impactar o projeto.
 
-## 12. 📖 Glossário (glossário) <a name="glossary"></a>
+## 12. Glossário <a name="glossary"></a>
 
 Forneça definições e explicações para os termos-chave usados no projeto.
 
-## 13. ✍️ Autores <a name="authors"></a>
+## 13. Autores <a name="authors"></a>
 
--   [@username](https://github.com/username) - Ideia e Trabalho Inicial
+-   [@Gabriel Assunção](https://github.com/zDeep10) - Ideia e Construção
 
-## 14. 🎉 Agradecimentos <a name="acknowledgement"></a>
+## 14. Agradecimentos <a name="acknowledgement"></a>
 
 -   Agradecimento a todos cujo código foi usado
--   Inspiração
--   Referências
