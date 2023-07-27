@@ -36,7 +36,8 @@
 11. [Riscos e falhas conhecidas (riscos e débito técnico)](#risks-and-technical-debt)
 12. [Glossário (glossário)](#glossary)
 13. [Contribuição](../CONTRIBUTING.md)
-- [Autores](#authors)
+14. [Autores](#authors)
+
 ## 1. Introdução & O que o sistema deve fazer <a name="introduction"></a>
 
 Escreva 1-2 parágrafos descrevendo o propósito e os objetivos do seu projeto.
