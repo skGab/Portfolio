@@ -6,6 +6,12 @@
   <a href="https://portfolio-one-mu-37.vercel.app/" rel="noopener" target="_blank">
     <img width=700px height=500px src="./src/lib/imgs/portfolio_thumb.webp" alt="Logo do Projeto" object-fit="cover">
   </a>
+
+  <style> 
+        a > img{
+                object-fit:cover;
+        }
+  </style>
 </p>
 
 <!-- STATUS -->
