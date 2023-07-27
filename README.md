@@ -2,11 +2,11 @@
 <h1 align="center"><a href="https://portfolio-one-mu-37.vercel.app/" target="_blank">Portfólio</a></h1>
 
 <!-- THUMB -->
-<figure align="center">
+<p align="center">
   <a href="https://portfolio-one-mu-37.vercel.app/" rel="noopener" target="_blank">
     <img width=700px height=500px src="./src/lib/imgs/portfolio_thumb.webp" alt="Logo do Projeto" style="object-fit:cover;">
   </a>
-</figure>
+</p>
 
 <!-- STATUS -->
 <div align="center">
