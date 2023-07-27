@@ -36,9 +36,7 @@
 11. [Riscos e falhas conhecidas (riscos e débito técnico)](#risks-and-technical-debt)
 12. [Glossário (glossário)](#glossary)
 13. [Contribuição](../CONTRIBUTING.md)
-        . [Autores](#authors)
-        . [Agradecimentos](#acknowledgement)
-
+- [Autores](#authors)
 ## 1. Introdução & O que o sistema deve fazer <a name="introduction"></a>
 
 Escreva 1-2 parágrafos descrevendo o propósito e os objetivos do seu projeto.
@@ -87,10 +85,6 @@ Identifique quaisquer riscos conhecidos ou débito técnico que possam impactar 
 
 Forneça definições e explicações para os termos-chave usados no projeto.
 
-## Autores <a name="authors"></a>
+## Autore <a name="authors"></a>
 
 -   [@Gabriel Assunção](https://github.com/zDeep10) - Ideia e Construção
-
-## Agradecimentos <a name="acknowledgement"></a>
-
--   Agradecimento a todos cujo código foi usado
