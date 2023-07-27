@@ -9,8 +9,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/zDeep10/repo-name.svg)](https://github.com/zDeep10/Portfolio/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/zDeep10/repo-name.svg)](https://github.com/zDeep10/Portfolio/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/zDeep10/Portfolio.svg)](https://github.com/zDeep10/Portfolio/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/zDeep10/Portfolio.svg)](https://github.com/zDeep10/Portfolio/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
