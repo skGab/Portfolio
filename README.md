@@ -31,27 +31,27 @@
 - [Glossário (glossário)](#glossary)
 - [Autor](#authors)
 
-## Introdução & O que o sistema deve fazer (objetivos) <a name="introduction"></a>
+## Introdução & O que o sistema deve fazer <a name="introduction"></a>
 
 Escreva 1-2 parágrafos descrevendo o propósito e os objetivos do seu projeto.
 
-## Contexto & Escopo (escopo) <a name="scope"></a>
+## Contexto & Escopo <a name="scope"></a>
 
 Defina o contexto e o escopo do seu projeto. O que está incluído e o que não está?
 
-## Hospedagem (implantação) <a name="deployment"></a>
+## Hospedagem <a name="deployment"></a>
 
 Explique o processo de implantação e quaisquer observações adicionais para hospedar o sistema.
 
-## Requerimentos de qualidade (requisitos de qualidade) <a name="quality-requirements"></a>
+## Requerimentos de qualidade <a name="quality-requirements"></a>
 
 Liste os requisitos e critérios de qualidade que o sistema deve atender.
 
-## Riscos e falhas conhecidas (riscos e débito técnico) <a name="risks-and-technical-debt"></a>
+## Riscos e falhas conhecidas <a name="risks-and-technical-debt"></a>
 
 Identifique quaisquer riscos conhecidos ou débito técnico que possam impactar o projeto.
 
-## Glossário (glossário) <a name="glossary"></a>
+## Glossário <a name="glossary"></a>
 
 Forneça definições e explicações para os termos-chave usados no projeto.
 
