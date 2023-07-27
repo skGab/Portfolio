@@ -1,12 +1,12 @@
+<!-- TITLE -->
+<h1 align="center"><a href="https://portfolio-one-mu-37.vercel.app/" target="_blank">Portfólio</a></h1>
+
 <!-- THUMB -->
 <p align="center">
-  <a href="" rel="noopener">
+  <a href="https://portfolio-one-mu-37.vercel.app/" rel="noopener" target="_blank">
     <img width=200px height=200px src="./src/lib/imgs/doc_thumb.png" alt="Logo do Projeto">
   </a>
 </p>
-
-<!-- TITLE -->
-<h3 align="center">Portfólio</h3>
 
 <!-- STATUS -->
 <div align="center">
