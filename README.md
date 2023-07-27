@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
-    <img width=200px height=200px src="./src/lib/imgs/app_doc.png" alt="Project logo">
+    <img width=200px height=200px src="./src/lib/imgs/app_doc.png" alt="Logo do Projeto">
   </a>
 </p>
 
@@ -17,84 +17,82 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Algumas linhas descrevendo o seu projeto.
   <br> 
 </p>
 
-## 📝 Table of Contents
+## 📝 Índice
 
--   [Introdução & O que o sistema deve fazer (goals)](#introduction)
--   [Restrições (constraints)](#constraints)
--   [Contexto & Escopo (scope)](#scope)
--   [Solução estratégica (strategy)](#strategy)
--   [Visualização de construção de blocos (building block view)](#building-block-view)
--   [Visualização em execução (runtime view)](#runtime-view)
--   [Hospedagem (deployment)](#deployment)
--   [Conceitos técnicos (crosscutting concepts)](#crosscutting-concepts)
--   [Arquitetura (architecture)](#architecture)
--   [Requerimentos de qualidade (quality requirements)](#quality-requirements)
--   [Riscos e falhas conhecidas (risks & technical debt)](#risks-and-technical-debt)
--   [Glossário (glossary)](#glossary)
--   [Contributing](../CONTRIBUTING.md)
--   [Authors](#authors)
--   [Acknowledgements](#acknowledgement)
+1. [Introdução & O que o sistema deve fazer (objetivos)](#introduction)
+2. [Restrições (constraints)](#constraints)
+3. [Contexto & Escopo (escopo)](#scope)
+4. [Solução estratégica (estratégia)](#strategy)
+5. [Visualização de construção de blocos (visão de blocos de construção)](#building-block-view)
+6. [Visualização em execução (visão em tempo de execução)](#runtime-view)
+7. [Hospedagem (implantação)](#deployment)
+8. [Conceitos técnicos (conceitos transversais)](#crosscutting-concepts)
+9. [Arquitetura (arquitetura)](#architecture)
+10. [Requerimentos de qualidade (requisitos de qualidade)](#quality-requirements)
+11. [Riscos e falhas conhecidas (riscos e débito técnico)](#risks-and-technical-debt)
+12. [Glossário (glossário)](#glossary)
+13. [Contribuição](../CONTRIBUTING.md)
+14. [Autores](#authors)
+15. [Agradecimentos](#acknowledgement)
 
-## 🧐 Introdução & O que o sistema deve fazer (goals) <a name="introduction"></a>
+## 1. 🧐 Introdução & O que o sistema deve fazer (objetivos) <a name="introduction"></a>
 
-Write about 1-2 paragraphs describing the purpose and goals of your project.
+Escreva 1-2 parágrafos descrevendo o propósito e os objetivos do seu projeto.
 
-## ⛓️ Restrições (constraints) <a name="constraints"></a>
+## 2. ⛓️ Restrições (constraints) <a name="constraints"></a>
 
-Explain any constraints or limitations that may affect the project's development.
+Explique quaisquer restrições ou limitações que possam afetar o desenvolvimento do projeto.
 
-## 🌐 Contexto & Escopo (scope) <a name="scope"></a>
+## 3. 🌐 Contexto & Escopo (escopo) <a name="scope"></a>
 
-Define the context and scope of your project. What is included and what is not?
+Defina o contexto e o escopo do seu projeto. O que está incluído e o que não está?
 
-## 🗺️ Solução estratégica (strategy) <a name="strategy"></a>
+## 4. 🗺️ Solução estratégica (estratégia) <a name="strategy"></a>
 
-Describe the high-level strategy and approach for solving the problem.
+Descreva a estratégia e abordagem de alto nível para resolver o problema.
 
-## 🧱 Visualização de construção de blocos (building block view) <a name="building-block-view"></a>
+## 5. 🧱 Visualização de construção de blocos (visão de blocos de construção) <a name="building-block-view"></a>
 
-Provide a visualization or explanation of the building blocks and components used in the system.
+Forneça uma visualização ou explicação dos blocos de construção e componentes utilizados no sistema.
 
-## 🏃 Visualização em execução (runtime view) <a name="runtime-view"></a>
+## 6. 🏃 Visualização em execução (visão em tempo de execução) <a name="runtime-view"></a>
 
-Describe the runtime view of your system, showing how components interact during execution.
+Descreva a visão em tempo de execução do seu sistema, mostrando como os componentes interagem durante a execução.
 
-## 🚀 Hospedagem (deployment) <a name="deployment"></a>
+## 7. 🚀 Hospedagem (implantação) <a name="deployment"></a>
 
-Explain the deployment process and any additional notes for hosting the system.
+Explique o processo de implantação e quaisquer observações adicionais para hospedar o sistema.
 
-## 📚 Conceitos técnicos (crosscutting concepts) <a name="crosscutting-concepts"></a>
+## 8. 📚 Conceitos técnicos (conceitos transversais) <a name="crosscutting-concepts"></a>
 
-Highlight any technical concepts or principles that are crucial for understanding the project.
+Destaque quaisquer conceitos técnicos ou princípios que sejam cruciais para entender o projeto.
 
-## 🏛️ Arquitetura (architecture) <a name="architecture"></a>
+## 9. 🏛️ Arquitetura (arquitetura) <a name="architecture"></a>
 
-Provide an overview of the system architecture and its components.
+Forneça uma visão geral da arquitetura do sistema e seus componentes.
 
-## 🔍 Requerimentos de qualidade (quality requirements) <a name="quality-requirements"></a>
+## 10. 🔍 Requerimentos de qualidade (requisitos de qualidade) <a name="quality-requirements"></a>
 
-List the quality requirements and criteria that the system must meet.
+Liste os requisitos e critérios de qualidade que o sistema deve atender.
 
-## ⚠️ Riscos e falhas conhecidas (risks & technical debt) <a name="risks-and-technical-debt"></a>
+## 11. ⚠️ Riscos e falhas conhecidas (riscos e débito técnico) <a name="risks-and-technical-debt"></a>
 
-Identify any known risks or technical debt that may impact the project.
+Identifique quaisquer riscos conhecidos ou débito técnico que possam impactar o projeto.
 
-## 📖 Glossário (glossary) <a name="glossary"></a>
+## 12. 📖 Glossário (glossário) <a name="glossary"></a>
 
-Provide definitions and explanations for key terms used in the project.
+Forneça definições e explicações para os termos-chave usados no projeto.
 
-## ✍️ Authors <a name="authors"></a>
+## 13. ✍️ Autores <a name="authors"></a>
 
--   [@username](https://github.com/username) - Idea & Initial work
+-   [@username](https://github.com/username) - Ideia e Trabalho Inicial
 
-See also the list of [contributors](https://github.com/username/repo-name/contributors) who participated in this project.
+## 14. 🎉 Agradecimentos <a name="acknowledgement"></a>
 
-## 🎉 Acknowledgements <a name="acknowledgement"></a>
-
--   Hat tip to anyone whose code was used
--   Inspiration
--   References
+-   Agradecimento a todos cujo código foi usado
+-   Inspiração
+-   Referências
