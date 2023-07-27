@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
-    <img width=200px height=200px src="./src/lib/imgs/app_doc.png" alt="Logo do Projeto">
+    <img width=200px height=200px src="./src/lib/imgs/doc_thumb.png" alt="Logo do Projeto">
   </a>
 </p>
 
@@ -17,11 +17,11 @@
 
 ---
 
-<p align="center"> Algumas linhas descrevendo o seu projeto.
+<p align="center"> 💡 Algumas linhas descrevendo o seu projeto.
   <br> 
 </p>
 
-## 📝 Índice
+## Índice
 
 - [Introdução & O que o sistema deve fazer (objetivos)](#introduction)
 - [Contexto & Escopo (escopo)](#scope)
