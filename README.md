@@ -36,8 +36,8 @@
 11. [Riscos e falhas conhecidas (riscos e débito técnico)](#risks-and-technical-debt)
 12. [Glossário (glossário)](#glossary)
 13. [Contribuição](../CONTRIBUTING.md)
-. [Autores](#authors)
-. [Agradecimentos](#acknowledgement)
+        . [Autores](#authors)
+        . [Agradecimentos](#acknowledgement)
 
 ## 1. Introdução & O que o sistema deve fazer <a name="introduction"></a>
 
