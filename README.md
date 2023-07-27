@@ -23,12 +23,12 @@
 
 ## Índice
 
-- [Introdução & O que o sistema deve fazer (objetivos)](#introduction)
-- [Contexto & Escopo (escopo)](#scope)
-- [Hospedagem (implantação)](#deployment)
-- [Requerimentos de qualidade (requisitos de qualidade)](#quality-requirements)
-- [Riscos e falhas conhecidas (riscos e débito técnico)](#risks-and-technical-debt)
-- [Glossário (glossário)](#glossary)
+- [Introdução & O que o sistema deve fazer](#introduction)
+- [Contexto & Escopo](#scope)
+- [Hospedagem](#deployment)
+- [Requerimentos de qualidade](#quality-requirements)
+- [Riscos e falhas conhecidas](#risks-and-technical-debt)
+- [Glossário](#glossary)
 - [Autor](#authors)
 
 ## Introdução & O que o sistema deve fazer <a name="introduction"></a>
