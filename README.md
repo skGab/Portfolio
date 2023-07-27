@@ -1,11 +1,14 @@
+<!-- THUMB -->
 <p align="center">
   <a href="" rel="noopener">
     <img width=200px height=200px src="./src/lib/imgs/doc_thumb.png" alt="Logo do Projeto">
   </a>
 </p>
 
+<!-- TITLE -->
 <h3 align="center">Portfólio</h3>
 
+<!-- STATUS -->
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -17,41 +20,39 @@
 
 ---
 
+<!-- DESCRIPTION -->
 <p align="center"> 💡 Algumas linhas descrevendo o seu projeto.
   <br> 
 </p>
 
+<!-- INTRO -->
+
 ## Índice
 
-- [Introdução & O que o sistema deve fazer](#introduction)
-- [Contexto & Escopo](#scope)
-- [Hospedagem](#deployment)
-- [Requerimentos de qualidade](#quality-requirements)
-- [Riscos e falhas conhecidas](#risks-and-technical-debt)
-- [Glossário](#glossary)
-- [Autor](#authors)
+-   [Tecnologias](#tecnologies)
+-   [Introdução & O que o sistema deve fazer](#goal)
+-   [Funcionalidades](#features)
+-   [Requerimentos de qualidade](#quality)
+-   [Instruções de Uso](#glossary)
+-   [Autor](#authors)
 
-## Introdução & O que o sistema deve fazer <a name="introduction"></a>
-
-Escreva 1-2 parágrafos descrevendo o propósito e os objetivos do seu projeto.
-
-## Contexto & Escopo <a name="scope"></a>
+## Tecnologias <a name="tecnologies"></a>
 
 Defina o contexto e o escopo do seu projeto. O que está incluído e o que não está?
 
-## Hospedagem <a name="deployment"></a>
+## Objetivo <a name="goal"></a>
+
+Escreva 1-2 parágrafos descrevendo o propósito e os objetivos do seu projeto.
+
+## Funcionalidades <a name="features"></a>
 
 Explique o processo de implantação e quaisquer observações adicionais para hospedar o sistema.
 
-## Requerimentos de qualidade <a name="quality-requirements"></a>
+## Requerimentos de qualidade <a name="quality"></a>
 
 Liste os requisitos e critérios de qualidade que o sistema deve atender.
 
-## Riscos e falhas conhecidas <a name="risks-and-technical-debt"></a>
-
-Identifique quaisquer riscos conhecidos ou débito técnico que possam impactar o projeto.
-
-## Glossário <a name="glossary"></a>
+## Instruções de Uso <a name="glossary"></a>
 
 Forneça definições e explicações para os termos-chave usados no projeto.
 
