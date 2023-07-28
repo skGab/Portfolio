@@ -66,6 +66,7 @@
 ``
 npm install
 ``
+
 <br>
 
 - Para iniciar o servidor de desenvolvimento local, utilize o seguinte comando:
@@ -105,6 +106,7 @@ O sistema estará disponível em http://localhost:5000/ em uma versão otimizada
 npm run lint
 ``
 
+``
 npm run format 
 ``
 
