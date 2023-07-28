@@ -42,11 +42,14 @@
 			min-height: 130px;
 			max-height: 130px;
 			// max-width: 230px;
+
+			transition: all 0.3s ease; /* Adding smooth transition */
 		}
 		img:hover {
 			-webkit-mask-position: 7.5% 50%, 92.5% 50%;
 			mask-position: 7.5% 50%, 92.5% 50%;
 			filter: grayscale(0);
+			transform: scale(1.1);
 		}
 
 		p {

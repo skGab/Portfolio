@@ -33,7 +33,7 @@ Portfolio being developed with Sveltekit, see:#
         [  ] AtlanticHub (Wordpress)
         [  ] Leads-api (RestApi + Ts)
         [  ] Api (RestApi + Ts)
-        [  ] Portfolio (sveltekit)
+        [ x ] Portfolio (sveltekit)
         [  ] Coopers (React + Sass)
 [ x ] Change projects names on github
 [   ] Projects View

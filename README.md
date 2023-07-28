@@ -112,4 +112,4 @@ npm run format
 
 ## Autor <a name="authors"></a>
 
--   [@Gabriel Assunção](https://github.com/zDeep10) - Ideia e Construção
+-   [@Gabriel Assunção](https://github.com/zDeep10) - Ideia e Construção.
