@@ -67,6 +67,7 @@
 npm install
 ``
 
+
 - Para iniciar o servidor de desenvolvimento local, utilize o seguinte comando:
 
 ``
@@ -74,6 +75,7 @@ npm run dev
 ``
 
 O sistema estará disponível em http://localhost:5000/. As alterações no código serão recarregadas automaticamente no navegador durante o desenvolvimento.
+
 
 
 - Para criar a versão final do projeto otimizada para produção, execute o seguinte comando:
@@ -85,21 +87,22 @@ npm run build
 Os arquivos finais serão gerados na pasta 'build'.
 
 
+
 - Após o processo de build, visualize a versão de produção localmente com o seguinte comando:
 
 
 ``
 npm run preview
-
 ``
 
 O sistema estará disponível em http://localhost:5000/ em uma versão otimizada para produção.
 
 
+
 - O projeto utiliza ESLint para análise estática do código e Prettier para formatação. Verifique problemas de linting ou formate o código automaticamente com os seguintes comandos:
 
 ``
-npm run lint 
+npm run lint <br>
 npm run format 
 ``
 
