@@ -47,7 +47,7 @@
 
 ## Objetivo <a name="goal"></a>
 
- A proposta é oferecer uma plataforma bem estruturada e visualmente atrativa, com o propósito de destacar minhas habilidades e experiências de mercado.
+ A proposta é oferecer uma plataforma bem estruturada e visualmente atrativa, com o propósito de destacar habilidades e experiências de mercado.
 
 ## Funcionalidades <a name="features"></a>
 
@@ -87,18 +87,20 @@ Os arquivos finais serão gerados na pasta 'build'.
 
 - Após o processo de build, visualize a versão de produção localmente com o seguinte comando:
 
+
 ``
 npm run preview
 
 ``
+
 O sistema estará disponível em http://localhost:5000/ em uma versão otimizada para produção.
 
 
 - O projeto utiliza ESLint para análise estática do código e Prettier para formatação. Verifique problemas de linting ou formate o código automaticamente com os seguintes comandos:
 
 ``
-npm run lint // Verificar problemas de linting
-npm run format // Formatar o código automaticamente
+npm run lint 
+npm run format 
 ``
 
 ## Autor <a name="authors"></a>
