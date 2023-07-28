@@ -1,8 +1,20 @@
 <script>
 	import treeIcon from '$lib/icons/treeIcon.svg';
 	import gitIcon from '$lib/icons/github.svg';
+	import moon from '$lib/icons/moon_dark.png';
+	import sun from '$lib/icons/sun_light.png';
 
 	import { page } from '$app/stores';
+
+	let active = false;
+
+	const switchTheme = () => {
+		if (active) {
+			active = false;
+		}
+
+		return (active = true);
+	};
 </script>
 
 <header id="header" class="sticky-top">
@@ -13,17 +25,23 @@
 				gabriel assunção
 			</a>
 
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon" />
-			</button>
+			<div id="buttons">
+				<button on:click={switchTheme} class="border-0 rounded-3 px-2 py-1 me-1">
+					<img src={active ? sun : moon} width="15" class="img-fluid" alt="" />
+				</button>
+
+				<button
+					class="navbar-toggler border-0 px-1"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon" />
+				</button>
+			</div>
 
 			<div class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0" id="navbarSupportedContent">
 				<ul class="navbar-nav mb-2 mb-lg-0 gap-1 align-items-end">
@@ -45,9 +63,6 @@
 							Source
 						</a>
 					</li>
-					<!-- {/* <li className="nav-item">
-                        <Link className="nav-link" aria-current="page" href="#">x</Link>
-                    </li> */} -->
 				</ul>
 			</div>
 		</div>

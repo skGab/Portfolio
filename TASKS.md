@@ -27,16 +27,16 @@ Portfolio being developed with Sveltekit, see:#
         - Portfolio (sveltekit)
         - Coopers (React + Sass)
 [   ] Projects documentation and organization
-        [  ] Mobiltec (PHP)
-        [  ] Icarros (sveltekit)
-        [  ] BNS (HTML + CSS)
-        [  ] AtlanticHub (Wordpress)
+        [ x ] Mobiltec (PHP)
+        [ x ] Icarros (sveltekit)
+        [ x ] BNS (HTML + CSS)
+        [ x ] AtlanticHub (Wordpress)
         [  ] Leads-api (RestApi + Ts)
         [  ] Api (RestApi + Ts)
         [ x ] Portfolio (sveltekit)
-        [  ] Coopers (React + Sass)
+        [ x ] Coopers (React + Sass)
 [ x ] Change projects names on github
-[   ] Projects View
+[ x ] Projects View
 [   ] SEO revision
 [   ] Open Graph
 [   ] Optimization revision
