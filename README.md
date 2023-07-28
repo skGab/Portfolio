@@ -23,7 +23,7 @@
 <!-- DESCRIPTION -->
 <p align="center"> 
         💡 
-        Portfolio pessoal desenvolvido com o framework SvelteKit, exibindo informações sobre mim, minhas habilidades e projetos anteriores. Através de uma interface moderna e responsiva, apresento uma breve introdução sobre minha trajetória, bem como detalhes e links para projetos desenvolvidos
+        Portfolio pessoal desenvolvido com o framework SvelteKit, através de uma interface moderna e responsiva, apresento uma breve introdução sobre minha trajetória, bem como detalhes e links para projetos desenvolvidos.
   <br> 
 </p>
 
