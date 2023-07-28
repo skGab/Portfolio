@@ -23,7 +23,7 @@
 <!-- DESCRIPTION -->
 <p align="center"> 
         💡 
-        Portfolio pessoal desenvolvido com o framework SvelteKit, através de uma interface moderna e responsiva, apresento uma breve introdução sobre minha trajetória, bem como detalhes e links para projetos desenvolvidos.
+        Portfolio pessoal desenvolvido com SvelteKit e Typescript. Através de uma interface moderna e responsiva, apresento uma breve introdução sobre minha trajetória, bem como detalhes e links para projetos desenvolvidos.
   <br> 
 </p>
 
@@ -40,23 +40,66 @@
 
 ## Tecnologias <a name="tecnologies"></a>
 
-Defina o contexto e o escopo do seu projeto. O que está incluído e o que não está?
+- Sveltekit
+- Typescript
+- Sass
+- AOS (Animações)
 
 ## Objetivo <a name="goal"></a>
 
-Escreva 1-2 parágrafos descrevendo o propósito e os objetivos do seu projeto.
+ A proposta é oferecer uma plataforma bem estruturada e visualmente atrativa, com o propósito de destacar minhas habilidades e experiências de mercado.
 
 ## Funcionalidades <a name="features"></a>
 
-Explique o processo de implantação e quaisquer observações adicionais para hospedar o sistema.
+- Requisição de repositorios - API
 
 ## Requerimentos de qualidade <a name="quality"></a>
 
-Liste os requisitos e critérios de qualidade que o sistema deve atender.
+- Responsividade
+- Performance
+- Sustentável
 
 ## Instruções de Uso <a name="glossary"></a>
 
-Forneça definições e explicações para os termos-chave usados no projeto.
+- Certifique-se de ter o Node.js instalado em seu sistema. Em seguida, execute o seguinte comando para instalar as dependências do projeto:
+
+``
+npm install
+``
+
+- Para iniciar o servidor de desenvolvimento local, utilize o seguinte comando:
+
+``
+npm run dev
+``
+
+O sistema estará disponível em http://localhost:5000/. As alterações no código serão recarregadas automaticamente no navegador durante o desenvolvimento.
+
+
+- Para criar a versão final do projeto otimizada para produção, execute o seguinte comando:
+
+``
+npm run build
+``
+
+Os arquivos finais serão gerados na pasta 'build'.
+
+
+- Após o processo de build, visualize a versão de produção localmente com o seguinte comando:
+
+``
+npm run preview
+
+``
+O sistema estará disponível em http://localhost:5000/ em uma versão otimizada para produção.
+
+
+- O projeto utiliza ESLint para análise estática do código e Prettier para formatação. Verifique problemas de linting ou formate o código automaticamente com os seguintes comandos:
+
+``
+npm run lint // Verificar problemas de linting
+npm run format // Formatar o código automaticamente
+``
 
 ## Autor <a name="authors"></a>
 
