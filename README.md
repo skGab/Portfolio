@@ -1,12 +1,10 @@
 <!-- TITLE -->
-<h1 align="center"><a href="https://portfolio-one-mu-37.vercel.app/" target="_blank">Portfólio</a></h1>
+<h1 align="center" color="black"><a href="https://portfolio-one-mu-37.vercel.app/" target="_blank">Portfólio</a></h1>
 
 <!-- THUMB -->
 <p align="center">
   <a href="https://portfolio-one-mu-37.vercel.app/" rel="noopener" target="_blank">
-    <kbd>
         <img src="./src/lib/imgs/doc_thumb.png" style="box-shadow: 1px 2px 4px gray;" alt="Logo do Projeto" object-fit="cover">
-    </kbd>
   </a>
 </p>
 
