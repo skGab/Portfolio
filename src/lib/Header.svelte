@@ -3,14 +3,15 @@
 	import gitIcon from '$lib/icons/github.svg';
 	import moon from '$lib/icons/moon_dark.png';
 	import sun from '$lib/icons/sun_light.png';
+	import Theme from './components/Theme.svelte';
 
 	import { page } from '$app/stores';
 
-	let active = false;
+	let active = true;
 
 	const switchTheme = () => {
 		if (active) {
-			active = false;
+			return (active = false);
 		}
 
 		return (active = true);
@@ -20,30 +21,12 @@
 <header id="header" class="sticky-top">
 	<nav class="navbar navbar-expand-lg navbar-dark">
 		<div class="container">
-			<a class="navbar-brand fw-bold" href="/">
-				<img src={treeIcon} width={25} class="img-fluid me-1 hoverTree" alt="Icone floresta" />
+			<a class="navbar-brand fw-bold me-4" href="/">
+				<img src={treeIcon} width={25} class="img-fluid hoverTree" alt="Icone floresta" />
 				gabriel assunção
 			</a>
 
-			<div id="buttons">
-				<button on:click={switchTheme} class="border-0 rounded-3 px-2 py-1 me-1">
-					<img src={active ? sun : moon} width="15" class="img-fluid" alt="" />
-				</button>
-
-				<button
-					class="navbar-toggler border-0 px-1"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon" />
-				</button>
-			</div>
-
-			<div class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0" id="navbarSupportedContent">
+			<div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
 				<ul class="navbar-nav mb-2 mb-lg-0 gap-1 align-items-end">
 					<li class="nav-item">
 						<a
@@ -65,6 +48,27 @@
 					</li>
 				</ul>
 			</div>
+
+			<div id="buttons">
+				<button
+					on:click={switchTheme}
+					class="theme border-0 rounded-3 me-1 me-md-0 {active ? 'light' : 'dark'}"
+				>
+					<img src={active ? sun : moon} width="15" class="img-fluid" alt="Icone do thema" />
+				</button>
+
+				<button
+					class="navbar-toggler border-0 px-1"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon" />
+				</button>
+			</div>
 		</div>
 	</nav>
 </header>
@@ -80,13 +84,17 @@
 				color: var(--white) !important;
 			}
 
-			.navbar-brand:hover {
-				text-decoration: none;
+			a:hover {
+				text-decoration: underline;
 			}
 
 			.navbar-brand:hover > .hoverTree {
 				transition: all 0.3s;
 				transform: rotate(-22deg);
+			}
+
+			.navbar-brand:hover {
+				text-decoration: none;
 			}
 
 			.nav-link {
@@ -98,6 +106,27 @@
 				background-color: #ffae35;
 				color: var(--body) !important;
 			}
+		}
+
+		#buttons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.dark {
+			background-color: #38383d;
+		}
+		.light {
+			background-color: rgba(255, 205, 130, 0.925);
+		}
+		.theme {
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0.8rem;
+			transition: all 0.4s ease;
 		}
 	}
 </style>

@@ -4,6 +4,14 @@
 	--body: #202023;
 
 	--link: #ff9900;
+
+	--background-color: #fff; /* Light theme background color */
+	--text-color: #333;
+}
+
+[data-theme='dark'] {
+	--background-color: #1a1a1a;
+	--text-color: #f1f1f1;
 }
 
 html {
@@ -71,7 +79,6 @@ body {
 	a:hover {
 		color: #fd8802;
 		transition: all ease 0.5s;
-		// text-decoration: underline;
 	}
 
 	ul {
