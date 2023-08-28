@@ -11,22 +11,28 @@ export const config: Config = {
 export const load = (async ({ fetch }) => {
 	const username = 'skGab';
 
-	const data = await fetch(`https://api.github.com/users/${username}/starred`);
-	const parseData = await data.json();
+	try {
+		const data = await fetch(`https://api.github.com/users/${username}/starred`);
 
-	const repositories: Repos[] = parseData.map((repo: Repos) => {
-		return {
-			name: repo.name,
-			category: repoCategories[repo.name],
-			image: repoImgs[repo.name],
-			link: repo.html_url,
-			description: repoDescription[repo.name],
-		};
-	});
+		if (!data.ok) {
+			throw new Error('Failed to fetch data');
+		}
 
-	if (!repositories) {
-		throw error(404, 'not found');
+		const parseData = await data.json();
+
+		const repositories: Repos[] = parseData.map((repo: Repos) => {
+			return {
+				name: repo.name,
+				category: repoCategories[repo.name],
+				image: repoImgs[repo.name],
+				link: repo.html_url,
+				description: repoDescription[repo.name],
+			};
+		});
+		// return { repositories };
+
+		return { repositories };
+	} catch (err) {
+		// throw error(500, err.message);
 	}
-
-	return { repositories };
 }) satisfies PageLoad;

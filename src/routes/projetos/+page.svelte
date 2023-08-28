@@ -18,7 +18,7 @@
 		<!-- {/* WEB APP */} -->
 		<h2 class="d-flex flex-column mb-4" data-aos="fade-up" data-aos-duration="1000">Web-App <span /></h2>
 		<ul class="row justify-content-between align-items-start mb-0" data-aos="fade-up" data-aos-duration="1200">
-			<Repos {data} cat={'full-stack'} />
+			<Repos data={data} cat={'full-stack'} />
 		</ul>
 
 		<hr class="mt-4 mb-4" />

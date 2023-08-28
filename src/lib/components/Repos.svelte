@@ -1,23 +1,32 @@
 <script lang="ts">
 	import type { Repos } from '../../routes/projetos/interface';
 
-	export let data;
+	export let data: { repositories?: Repos[] };
 	export let cat: string;
+	// let filteredRepos: Repos[] = [];
 
-	let filteredRepos = data.repositories.filter((repo: Repos) => repo.category === cat);
+	// $: if (data.repositories && cat) {
+	// 	filteredRepos = data.repositories.filter((repo: Repos) => repo.category === cat);
+	// }
 </script>
 
-{#each filteredRepos as repo}
-	<li class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
-		<a href={repo.link} class="w-100" target="_blank" rel="noreferrer">
-			<figure class="project text-center text-center">
-				<img loading="lazy" src={repo.image} alt="project thumb" class="w-100 mb-3" />
-				<h3 class="h5 mb-1">{repo.name}</h3>
-				<p class="mb-0">{repo.description}</p>
-			</figure>
-		</a>
-	</li>
-{/each}
+{#await data.repositories}
+	Loading...
+{:then value}
+	{#if value}
+		{#each value as repo}
+			<li class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
+				<a href={repo.name} class="w-100" target="_blank" rel="noreferrer">
+					<figure class="project text-center text-center">
+						<img loading="lazy" src={repo.image} alt="project thumb" class="w-100 mb-3" />
+						<h3 class="h5 mb-1">{repo.name}</h3>
+						<p class="mb-0">{repo.description}</p>
+					</figure>
+				</a>
+			</li>
+		{/each}
+	{/if}
+{/await}
 
 <style lang="scss">
 	a {
