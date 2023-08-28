@@ -18,7 +18,7 @@
 			<li class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
 				<a href={repo.name} class="w-100" target="_blank" rel="noreferrer">
 					<figure class="project text-center text-center">
-						<img loading="lazy" src={repo.image} alt="project thumb" class="w-100 mb-3" />
+						<img src={repo.image} alt="project thumb" class="w-100 mb-3" />
 						<h3 class="h5 mb-1">{repo.name}</h3>
 						<p class="mb-0">{repo.description}</p>
 					</figure>
