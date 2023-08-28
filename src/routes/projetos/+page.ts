@@ -9,7 +9,7 @@ export const config: Config = {
 };
 
 export const load = (async ({ fetch }) => {
-	const username = 'zdeep10';
+	const username = 'skGab';
 
 	const data = await fetch(`https://api.github.com/users/${username}/starred`);
 	const parseData = await data.json();
@@ -25,9 +25,7 @@ export const load = (async ({ fetch }) => {
 	});
 
 	if (!repositories) {
-		throw error(404, {
-			message: 'teste',
-		});
+		throw error(404, 'not found');
 	}
 
 	return { repositories };

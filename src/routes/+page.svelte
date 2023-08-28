@@ -1,4 +1,5 @@
 <script lang="ts">
+	import profile from '$lib/imgs/profile.webp';
 </script>
 
 <svelte:head>
@@ -22,11 +23,11 @@
 				>
 					<div>
 						<h1 class="fw-bold lh-1">Gabriel Assunção</h1>
-						<p class="m-0">Desenvolvedor Full-Stack ( Next.js / Laravel / Wordpress )</p>
+						<p class="m-0">Programador de Sistemas ( Nest.js / Laravel / Wordpress )</p>
 					</div>
 
 					<figure>
-						<!-- {/* <Image src="" alt="#" /> */} -->
+						<img width="120" src={profile} alt="Foto de Perfil" />
 					</figure>
 				</section>
 
@@ -191,6 +192,11 @@
 </section>
 
 <style lang="scss">
+	#profile {
+		figure > img {
+			border-radius: 50%;
+		}
+	}
 	#about {
 		section {
 			h2 {

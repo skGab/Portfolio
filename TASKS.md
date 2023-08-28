@@ -8,7 +8,7 @@ Portfolio being developed with Sveltekit, see:#
 [ x ] fixed header
 [   ] 3D tree
 [   ] light and dark theme
-[   ] profile picture
+[ x ] profile picture
 [ x ] projects from github
 [ x ] Header animation
 [ x ] Switch page animation ('AOS')
