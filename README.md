@@ -12,8 +12,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/zDeep10/Portfolio.svg)](https://github.com/zDeep10/Portfolio/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/zDeep10/Portfolio.svg)](https://github.com/zDeep10/Portfolio/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/skGab/Portfolio.svg)](https://github.com/skGab/Portfolio/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/skGab/Portfolio.svg)](https://github.com/skGab/Portfolio/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -112,4 +112,4 @@ npm run format
 
 ## Autor <a name="authors"></a>
 
--   [@Gabriel Assunção](https://github.com/zDeep10) - Ideia e Construção.
+-   [@Gabriel Assunção](https://github.com/skGab) - Ideia e Construção.

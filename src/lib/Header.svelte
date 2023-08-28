@@ -39,7 +39,7 @@
 						<a
 							class="nav-link d-flex align-items-center"
 							aria-current="page"
-							href="https://github.com/zDeep10"
+							href="https://github.com/skGab"
 							target="_blank"
 						>
 							<img src={gitIcon} width={15} class="me-2 img-fluid" alt="GitHub Icon" />
