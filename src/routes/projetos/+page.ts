@@ -2,6 +2,7 @@ import type { PageLoad } from './$types';
 import type { Config } from '@sveltejs/adapter-vercel';
 import { repoCategories, repoImgs, repoDescription } from './content';
 import type { Repos } from './interface';
+import { error } from '@sveltejs/kit';
 
 export const config: Config = {
 	runtime: 'edge',
@@ -28,12 +29,15 @@ export const load = (async ({ fetch }) => {
 				description: repoDescription[repo.name],
 			};
 		});
-		// return { repositories };
 
 		return {
 			repositories,
 		};
-	} catch (err) {
-		// throw error(500, err.message);
+	} catch (err: unknown) {
+		if (err instanceof Error) {
+			throw error(500, err.message);
+		} else {
+			throw error(500, 'An unknown error occurred');
+		}
 	}
 }) satisfies PageLoad;
