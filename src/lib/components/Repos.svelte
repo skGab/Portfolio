@@ -4,13 +4,17 @@
 	export let data: { repositories?: Repos[] };
 	export let cat: string;
 	let filteredRepos: Repos[] = [];
+	let loading = true;
 
 	$: if (data.repositories && cat) {
 		filteredRepos = data.repositories.filter((repo: Repos) => repo.category === cat);
+		loading = false;
 	}
 </script>
 
-{#if data.repositories}
+{#if loading}
+	Loading...
+{:else if filteredRepos.length > 0}
 	{#each filteredRepos as repo}
 		<li class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
 			<a href={repo.link} class="w-100" target="_blank" rel="noreferrer">
@@ -23,7 +27,7 @@
 		</li>
 	{/each}
 {:else}
-	Loading...
+	No data avaliable
 {/if}
 
 <style lang="scss">

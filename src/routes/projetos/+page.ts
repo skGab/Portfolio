@@ -1,6 +1,5 @@
 import type { PageLoad } from './$types';
 import type { Config } from '@sveltejs/adapter-vercel';
-import { error } from '@sveltejs/kit';
 import { repoCategories, repoImgs, repoDescription } from './content';
 import type { Repos } from './interface';
 
@@ -31,7 +30,9 @@ export const load = (async ({ fetch }) => {
 		});
 		// return { repositories };
 
-		return { repositories };
+		return {
+			repositories,
+		};
 	} catch (err) {
 		// throw error(500, err.message);
 	}
