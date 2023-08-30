@@ -50,8 +50,15 @@
 			box-shadow: 1px 2px 4px black;
 			transition: 0.3s linear;
 			object-fit: cover;
-			min-height: 130px;
-			max-height: 130px;
+
+			max-width: 420px;
+			max-height: 220px;
+
+			@media screen and (min-width: 576px) {
+				max-width: 430px;
+				max-height: 130px;
+			}
+
 			// max-width: 230px;
 
 			transition: all 0.3s ease; /* Adding smooth transition */
@@ -66,6 +73,7 @@
 		p {
 			font-size: 0.95rem;
 			max-width: 250px;
+			margin: 0 auto;
 		}
 	}
 </style>

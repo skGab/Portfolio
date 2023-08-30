@@ -21,13 +21,13 @@
 					data-aos="fade-up"
 					data-aos-duration="1200"
 				>
-					<div>
+					<div class="me-3">
 						<h1 class="fw-bold lh-1">Gabriel Assunção</h1>
 						<p class="m-0">Programador de Sistemas ( Nest.js / Laravel / Wordpress )</p>
 					</div>
 
 					<figure>
-						<img width="120" src={profile} alt="Foto de Perfil" />
+						<img width="120" src={profile} alt="Foto Gabriel Assunção" />
 					</figure>
 				</section>
 

@@ -26,6 +26,27 @@
 				gabriel assunção
 			</a>
 
+			<div id="buttons">
+				<button
+					on:click={switchTheme}
+					class="theme border-0 rounded-3 me-1 me-md-0 {active ? 'light' : 'dark'}"
+				>
+					<img src={active ? sun : moon} width="15" class="img-fluid" alt="Icone do thema" />
+				</button>
+
+				<button
+					class="navbar-toggler border-0 px-1"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon" />
+				</button>
+			</div>
+
 			<div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
 				<ul class="navbar-nav mb-2 mb-lg-0 gap-1 align-items-end">
 					<li class="nav-item">
@@ -47,27 +68,6 @@
 						</a>
 					</li>
 				</ul>
-			</div>
-
-			<div id="buttons">
-				<button
-					on:click={switchTheme}
-					class="theme border-0 rounded-3 me-1 me-md-0 {active ? 'light' : 'dark'}"
-				>
-					<img src={active ? sun : moon} width="15" class="img-fluid" alt="Icone do thema" />
-				</button>
-
-				<button
-					class="navbar-toggler border-0 px-1"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon" />
-				</button>
 			</div>
 		</div>
 	</nav>
@@ -112,6 +112,10 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+
+			@media screen and (min-width: 992px) {
+				order: 2;
+			}
 		}
 
 		.dark {
