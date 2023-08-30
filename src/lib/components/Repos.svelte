@@ -18,8 +18,8 @@
 	{#each filteredRepos as repo}
 		<li class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
 			<a href={repo.link} class="w-100" target="_blank" rel="noreferrer">
-				<figure class="project text-center text-center">
-					<img loading="lazy" src={repo.image} alt="project thumb" class="w-100 mb-3" />
+				<figure class="project text-center text-center px-4 px-sm-0">
+					<img loading="lazy" src={repo.image} alt="project thumb" class=" w-100 mb-3" />
 					<h3 class="h5 mb-1">{repo.name}</h3>
 					<p class="mb-0">{repo.description}</p>
 				</figure>
@@ -51,8 +51,8 @@
 			transition: 0.3s linear;
 			object-fit: cover;
 
-			max-width: 420px;
-			max-height: 220px;
+			// max-width: 300px;
+			max-height: 180px;
 
 			@media screen and (min-width: 576px) {
 				max-width: 430px;

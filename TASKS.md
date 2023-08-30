@@ -37,7 +37,7 @@ Portfolio being developed with Sveltekit, see:#
         [ x ] Coopers (React + Sass)
 [ x ] Change projects names on github
 [ x ] Projects View
-[   ] SEO revision
+[ x ] SEO revision
 [ x ] Responsividade
 [ x ] Open Graph
 [ x ] Optimization revision
