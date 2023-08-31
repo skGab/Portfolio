@@ -5159,8 +5159,10 @@ eslint-plugin-tsdoc@latest:
     prettier: ^2.8.0
     prettier-plugin-svelte: ^2.10.1
     sass: ^1.63.6
+    skeleton-elements: ^4.0.1
     svelte: ^4.0.0
     svelte-check: ^3.4.3
+    svelte-loading-skeleton: ^1.0.1
     tslib: ^2.4.1
     typescript: ^5.0.0
     vite: ^4.3.9
@@ -5697,6 +5699,13 @@ eslint-plugin-tsdoc@latest:
   languageName: node
   linkType: hard
 
+"skeleton-elements@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "skeleton-elements@npm:4.0.1"
+  checksum: f612258f05931c3649bf95ae6983c8e93727ee65b4f69edc90264b5c0bb4bb850093c889ee509f32c36c586a0febc8ed8137a3ab27ba6e47a00c2ec6c0fd1d6f
+  languageName: node
+  linkType: hard
+
 "slash@npm:^3.0.0":
   version: 3.0.0
   resolution: "slash@npm:3.0.0"
@@ -5997,6 +6006,13 @@ eslint-plugin-tsdoc@latest:
   peerDependencies:
     svelte: ^3.19.0 || ^4.0.0-next.0
   checksum: bf1179de47100353ef002d96e2b20782420a388cc5a451a1c3564643fde0423ac7b689a4cded728a6dee5e30a80e44089790be4bf5c37189b14704bf8a6efaf6
+  languageName: node
+  linkType: hard
+
+"svelte-loading-skeleton@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "svelte-loading-skeleton@npm:1.0.1"
+  checksum: 0f33dc09bd950f7db31a0a4bd9f47600f12e68c55ed08b4c461dd2b1b5d6945a900e4b52cc4bfda8310fbd871ae0c2fba6486dcdc4c23bc42f101ee80368bcca
   languageName: node
   linkType: hard
 

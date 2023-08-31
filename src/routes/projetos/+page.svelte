@@ -1,8 +1,5 @@
 <script lang="ts">
 	import Repos from '$lib/components/Repos.svelte';
-	import type { PageData } from './$types';
-
-	export let data: PageData;
 </script>
 
 <svelte:head>
@@ -18,7 +15,7 @@
 		<!-- {/* WEB APP */} -->
 		<h2 class="d-flex flex-column mb-4" data-aos="fade-up" data-aos-duration="1000">Web-App <span /></h2>
 		<ul class="row justify-content-between align-items-start mb-0" data-aos="fade-up" data-aos-duration="1200">
-			<Repos data={data} cat={'full-stack'} />
+			<Repos cat={'full-stack'} />
 		</ul>
 
 		<hr class="mt-4 mb-4" />
@@ -31,7 +28,7 @@
 			data-aos-duration="1400"
 			data-aos-anchor-placement="top-bottom"
 		>
-			<Repos {data} cat={'front-end'} />
+			<Repos cat={'front-end'} />
 		</ul>
 
 		<hr class="mt-4 mb-4" />
@@ -51,7 +48,7 @@
 			data-aos-duration="1000"
 			data-aos-anchor-placement="top-bottom"
 		>
-			<Repos {data} cat={'back-end'} />
+			<Repos cat={'back-end'} />
 		</ul>
 	</div>
 </section>

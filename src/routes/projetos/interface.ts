@@ -1,10 +1,10 @@
 // REPOSITORIES
 export interface Repos {
-	link: string | null | undefined;
 	name: string;
 	category: string;
 	image: string;
 	html_url: HTMLLinkElement;
+	link: string | null | undefined;
 	description: string;
 }
 

@@ -1,20 +1,51 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import type { PageData } from '../../routes/$types';
 	import type { Repos } from '../../routes/projetos/interface';
+	import { error } from '@sveltejs/kit';
+	import { repoCategories, repoImgs, repoDescription } from '../../routes/projetos/content';
+	import Skeleton from './Skeleton.svelte';
 
-	export let data: { repositories?: Repos[] };
 	export let cat: string;
+	let data: { repositories: Repos[] | null } = { repositories: null };
 	let filteredRepos: Repos[] = [];
-	let loading = true;
+
+	let isLoading = true;
+
+	const fetchData = async () => {
+		try {
+			const response = await fetch(`https://api.github.com/users/skGab/starred`);
+
+			const repos = await response.json();
+
+			const repositories: Repos[] | null = repos.map((repo: any) => ({
+				name: repo.name,
+				category: repoCategories[repo.name],
+				image: repoImgs[repo.name],
+				link: repo.html_url,
+				description: repoDescription[repo.name],
+			}));
+
+			isLoading = true;
+			return { repositories };
+		} catch (err) {
+			throw error(500, 'An unknown error occurred');
+		}
+	};
+
+	onMount(async () => {
+		data = await fetchData();
+		isLoading = false;
+	});
 
 	$: if (data.repositories && cat) {
 		filteredRepos = data.repositories.filter((repo: Repos) => repo.category === cat);
-		loading = false;
 	}
 </script>
 
-{#if loading}
-	Loading...
-{:else if filteredRepos.length > 0}
+{#if isLoading}
+	<Skeleton />
+{:else}
 	{#each filteredRepos as repo}
 		<li class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
 			<a href={repo.link} class="w-100" target="_blank" rel="noreferrer">
@@ -26,8 +57,6 @@
 			</a>
 		</li>
 	{/each}
-{:else}
-	No data avaliable
 {/if}
 
 <style lang="scss">
@@ -52,7 +81,7 @@
 			object-fit: cover;
 
 			// max-width: 300px;
-			max-height: 180px;
+			max-height: 190px;
 
 			@media screen and (min-width: 576px) {
 				max-width: 430px;
