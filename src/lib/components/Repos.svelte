@@ -1,16 +1,19 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import type { PageData } from '../../routes/$types';
+	import { onMount, tick } from 'svelte';
 	import type { Repos } from '../../routes/projetos/interface';
 	import { error } from '@sveltejs/kit';
 	import { repoCategories, repoImgs, repoDescription } from '../../routes/projetos/content';
-	import Skeleton from './Skeleton.svelte';
+	import Loading from './Loading.svelte';
+	import { writable } from 'svelte/store';
 
 	export let cat: string;
 	let data: { repositories: Repos[] | null } = { repositories: null };
 	let filteredRepos: Repos[] = [];
 
 	let isLoading = true;
+
+	// export const repositories = writable(null);
+	// export const timeout = writable(false);
 
 	const fetchData = async () => {
 		try {
@@ -34,6 +37,7 @@
 	};
 
 	onMount(async () => {
+		await tick();
 		data = await fetchData();
 		isLoading = false;
 	});
@@ -41,10 +45,58 @@
 	$: if (data.repositories && cat) {
 		filteredRepos = data.repositories.filter((repo: Repos) => repo.category === cat);
 	}
+
+	// const fetchData = async () => {
+	// 	try {
+	// 		const response = await fetch(`https://api.github.com/users/skGab/starred`);
+	// 		const repos = await response.json();
+
+	// 		const repoData: Repos[] = repos.map((repo: any) => ({
+	// 			name: repo.name,
+	// 			category: repoCategories[repo.name],
+	// 			image: repoImgs[repo.name],
+	// 			link: repo.html_url,
+	// 			description: repoDescription[repo.name],
+	// 		}));
+
+	// 		repositories.set(repoData);
+
+	// 		// Cache data in localStorage
+	// 		localStorage.setItem('cachedRepos', JSON.stringify({ data: repoData, timestamp: Date.now() }));
+	// 	} catch (err) {
+	// 		throw error(500, 'An unknown error occurred');
+	// 	}
+	// };
+
+	// onMount(async () => {
+	// 	await tick();
+	// 	const cachedData = localStorage.getItem('cachedRepos');
+	// 	const currentTime = Date.now();
+	// 	const ttl = 3600000; // 1 hour in milliseconds
+
+	// 	if (cachedData) {
+	// 		const { data, timestamp } = JSON.parse(cachedData);
+
+	// 		if (currentTime - timestamp < ttl) {
+	// 			repositories.set(data);
+	// 			isLoading = false;
+	// 			return;
+	// 		}
+	// 	}
+
+	// 	if (getRepo(repositories) === null || getRepo(timeout)) {
+	// 		isLoading = true;
+	// 		await fetchData();
+	// 		timeout.set(false);
+	// 		isLoading = false;
+	// 	}
+	// });
+
+	// $: filteredRepos = getRepo(repositories)?.filter((repo: Repos) => repo.category === cat) || [];
 </script>
 
 {#if isLoading}
-	<Skeleton />
+	<Loading />
 {:else}
 	{#each filteredRepos as repo}
 		<li class="col-12 col-sm-6 d-flex align-items-center justify-content-center">

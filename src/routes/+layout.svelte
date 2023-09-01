@@ -6,7 +6,6 @@
 	import AOS from 'aos';
 	import 'aos/dist/aos.css';
 	import '../global.scss';
-	import 'skeleton-elements/css/skeleton-elements.css';
 
 	let scrollToTop: () => void;
 

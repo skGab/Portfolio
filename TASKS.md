@@ -12,7 +12,7 @@ Portfolio being developed with Sveltekit, see:#
 [ x ] projects from github
 [ x ] Header animation
 [ x ] Switch page animation ('AOS')
-[   ] fix streaming loading
+[ x ] fix streaming loading
 [ x ] Bio Content
 [ x ] Projects thumbs
 [ x ] Build responsiviness
@@ -32,7 +32,7 @@ Portfolio being developed with Sveltekit, see:#
         [ x ] BNS (HTML + CSS)
         [ x ] AtlanticHub (Wordpress)
         [ x ] Leads-api (RestApi + Ts)
-        [  ] Api (RestApi + Ts)
+        [   ] Api (RestApi + Ts)
         [ x ] Portfolio (sveltekit)
         [ x ] Coopers (React + Sass)
 [ x ] Change projects names on github
@@ -41,5 +41,6 @@ Portfolio being developed with Sveltekit, see:#
 [ x ] Responsividade
 [ x ] Open Graph
 [ x ] Optimization revision
+[   ] Fix fetch repos
 [ x ] Deploy
 ```

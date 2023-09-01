@@ -43,8 +43,7 @@
 		"aos": "^2.3.4",
 		"eslint-plugin-react-hooks": "^4.3.0",
 		"sass": "^1.63.6",
-		"skeleton-elements": "^4.0.1",
-		"svelte-loading-skeleton": "^1.0.1",
+		"spin.js": "^4.1.1",
 		"vite": "^4.3.9"
 	}
 }
