@@ -132,7 +132,7 @@
 			transition: 0.3s linear;
 			object-fit: cover;
 
-			// max-width: 300px;
+			max-width: 350px;
 			max-height: 190px;
 
 			@media screen and (min-width: 576px) {
