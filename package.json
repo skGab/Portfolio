@@ -1,0 +1,49 @@
+{
+	"name": "portfolio",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-vercel": "^3.0.2",
+		"@sveltejs/kit": "^1.20.4",
+		"@types/aos": "^3.0.4",
+		"@typescript-eslint/eslint-plugin": "^6.7.0",
+		"@typescript-eslint/parser": "^6.7.0",
+		"eslint": "^8.28.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-airbnb-typescript": "^17.0.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-import-resolver-alias": "^1.1.2",
+		"eslint-import-resolver-typescript": "^3.5.5",
+		"eslint-plugin-eslint-comments": "latest",
+		"eslint-plugin-import": "latest",
+		"eslint-plugin-jsx-a11y": "latest",
+		"eslint-plugin-mdx": "latest",
+		"eslint-plugin-react": "latest",
+		"eslint-plugin-svelte": "^2.30.0",
+		"eslint-plugin-tsdoc": "latest",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.10.1",
+		"svelte": "^4.0.0",
+		"svelte-check": "^3.4.3",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"aos": "^2.3.4",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"sass": "^1.63.6",
+		"spin.js": "^4.1.1",
+		"vite": "^4.3.9"
+	}
+}
