@@ -4,7 +4,7 @@
 <!-- THUMB -->
 <p align="center">
   <a href="https://portfolio-three-omega-71.vercel.app/" rel="noopener" target="_blank">
-        <img src="./src/lib/imgs/doc_thumb.png" style="box-shadow: 1px 2px 4px gray;" alt="Logo do Projeto" object-fit="cover">
+        <img src="./src/lib/imgs/doc_thumb.png" width="250px" style="box-shadow: 1px 2px 4px gray;" alt="Logo do Projeto" object-fit="cover">
   </a>
 </p>
 
