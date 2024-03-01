@@ -30,6 +30,10 @@
 				<button
 					on:click={switchTheme}
 					class="theme border-0 rounded-3 me-1 me-md-0 {active ? 'light' : 'dark'}"
+					data-bs-container="body"
+					data-bs-toggle="popover"
+					data-bs-placement="right"
+					data-bs-content="Sendo implementado!"
 				>
 					<img src={active ? sun : moon} width="15" class="img-fluid" alt="Icone do thema" />
 				</button>

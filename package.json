@@ -40,7 +40,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/bootstrap": "^5.2.10",
 		"aos": "^2.3.4",
+		"bootstrap": "^5.3.3",
 		"eslint-plugin-react-hooks": "^4.3.0",
 		"sass": "^1.63.6",
 		"spin.js": "^4.1.1",
