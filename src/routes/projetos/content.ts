@@ -14,7 +14,7 @@ import nodeImage from '$lib/imgs/node_thumb.webp';
 const repoImgs: RepoImages = {
 	Atlantic: atlanticImage,
 	Portfolio: portfolioImage,
-	'Monday-integration-service': nodeImage,
+	'Monday-integration-service': nestImage,
 	'Leads-API': nodeImage,
 	Icarros: icarrosImage,
 	BNS: bnsImage,
