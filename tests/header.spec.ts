@@ -1,29 +1,35 @@
 import { test, expect } from '@playwright/test';
+import { describe } from 'node:test';
 
-test('Animation, links and button should work', async ({ page }) => {
-	// // Select the logo element
-	// const logo = await page.$('.navbar-brand');
+test.describe('Animation, links and button should work', () => {
+	// test('Testing logo animation', async ({ page }) => {});
 
-	// // Hover over the logo
-	// await logo.hover();
+	// TEST PROJECT AND LOGO LINKS
+	test('Testing project and logo links', async ({ page }) => {
+		await page.goto('http://localhost:5173');
 
-	// // Wait for a short period to ensure the animation has had time to trigger
-	// await page.waitForTimeout(500); // Adjust the time as needed
+		await page.getByRole('link', { name: 'Projetos' }).click();
+		await expect(page).toHaveURL('http://localhost:5173/projetos/');
+		await page.getByRole('link', { name: 'gabriel assunção' }).click();
+		await expect(page).toHaveURL('http://localhost:5173');
+	});
 
-	await page.getByRole('link', { name: 'gabriel assunção' }).hover();
+	//TEST BUTTON THEME
+	test('Testing button theme', async ({ page }) => {
+		await page.goto('http://localhost:5173');
 
-	const logoElement = await page.$('.navbar-brand');
+		await page.locator('.theme').click();
 
-	// Check if the element exists before attempting to get its computed styles
-	if (logoElement) {
-		// Get the computed styles of the element after hover
-		const styles = await page.evaluate((logo) => {
-			return window.getComputedStyle(logo);
-		}, logoElement);
+		const themeButtonClass = await page.locator('.theme').getAttribute('class');
 
-		// Check if the transform property has changed to rotate(-22deg)
-		expect(styles.transform).toContain('rotate(-22deg)');
-	} else {
-		throw new Error('Logo element not found');
-	}
+		// 	CHECK IF IS EVERYTHING RIGHT WITH THE BUTTON CLASS
+		if (themeButtonClass === null) throw new Error('Erro ao pegar classe do botão');
+
+		const colorTheme = themeButtonClass.includes('light') ? 'light' : 'dark';
+
+		await expect(page.locator('.theme')).toHaveAttribute(
+			'class',
+			`theme border-0 rounded-3 me-1 me-md-0 ${colorTheme} s-6t0zidZTtq_e`,
+		);
+	});
 });

@@ -36,11 +36,11 @@
 					<h2 class="d-flex flex-column">Trabalho <span /></h2>
 
 					<p>
-					Programador Back-end trabalhando na implementação de <span class="text-secondary">microsserviços internos</span>. Com base sólida em desenvolvimento Front-end que facilita a boa colaboração entre areas. Buscando ser engenheiro de software com especialização em arquitetura e infraestrutura em nuvem.
+					Desenvolvedor Full-stack estudando implementação de <span class="text-secondary">microsserviços em Golang e Nest.js</span>. Possuo experiência desde a arquitetura ate a construção e entrega de APIs, serviços de integração e painéis dashboard. Busco me tornar um engenheiro de software com especialização em infraestrutura em nuvem, pois me motivo pela possibilidade de construir aplicações disponíveis e escaláveis.
 					</p>
 
 					<p>
-						Motivado na programação pela possiblidade de construir aplicações acessiveis no Front-end. E também, no processo de <span class="text-secondary">escalar e manter</span> sistemas bem construidos, no Back-end.
+						Além da experiência com back-end, tenho uma base sólida em front-end, que me permite colaborar melhor entre áreas. Participei da criação <span class="text-secondary">Hotsites, Websites e Aplicativos Web</span>.
 					</p>
 
 					<div class="w-100 text-center">
